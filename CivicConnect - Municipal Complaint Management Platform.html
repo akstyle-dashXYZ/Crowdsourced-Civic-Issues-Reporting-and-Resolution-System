@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://civicproblem31bcb.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicConnect - Municipal Complaint Management Platform</title>
+    <link rel="stylesheet" href="./CivicConnect - Municipal Complaint Management Platform_files/style.css">
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <span class="logo-icon">🏛️</span>
+                        <div class="logo-text">
+                            <h1>CivicConnect</h1>
+                            <p>Municipal Services Platform</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <button class="nav-btn active" data-section="home">
+                        <span class="nav-icon">🏠</span>
+                        <span>Home</span>
+                    </button>
+                    <button class="nav-btn" data-section="register">
+                        <span class="nav-icon">📝</span>
+                        <span>Report Issue</span>
+                    </button>
+                    <button class="nav-btn" data-section="track">
+                        <span class="nav-icon">📊</span>
+                        <span>Track Status</span>
+                    </button>
+                    <button class="nav-btn" data-section="dashboard">
+                        <span class="nav-icon">👮‍♂️</span>
+                        <span>Officer Portal</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h2>Professional Municipal Complaint Management</h2>
+                            <p>Report issues, track progress, and stay connected with your municipal services through SMS and WhatsApp notifications.</p>
+                            <div class="hero-actions">
+                                <button class="btn btn-primary" data-section="register">
+                                    📝 Report Issue
+                                </button>
+                                <button class="btn btn-secondary" data-section="track">
+                                    📊 Track Status
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="stats-preview">
+                                <div class="stat-item">
+                                    <div class="stat-number">2,847</div>
+                                    <div class="stat-label">Total Complaints</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">2,634</div>
+                                    <div class="stat-label">Resolved</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">4.6/5</div>
+                                    <div class="stat-label">Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features-section">
+                    <h3>Platform Features</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h4>Smart Notifications</h4>
+                            <p>Receive updates via SMS and WhatsApp with real-time status tracking</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">👮‍♂️</div>
+                            <h4>Officer Dashboard</h4>
+                            <p>Professional interface for municipal officers to manage and resolve complaints</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h4>Analytics &amp; Reports</h4>
+                            <p>Comprehensive performance tracking and citizen satisfaction metrics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Department Stats -->
+                <div class="department-stats">
+                    <h3>Department Performance</h3>
+                    <div class="dept-grid">
+                        <div class="dept-card">
+                            <h4>Roads &amp; Infrastructure</h4>
+                            <div class="dept-info">
+                                <span class="dept-stat">45 Active Cases</span>
+                                <span class="dept-rating">4.5⭐</span>
+                            </div>
+                        </div>
+                        <div class="dept-card">
+                            <h4>Water &amp; Sanitation</h4>
+                            <div class="dept-info">
+                                <span class="dept-stat">28 Active Cases</span>
+                                <span class="dept-rating">4.2⭐</span>
+                            </div>
+                        </div>
+                        <div class="dept-card">
+                            <h4>Electrical Department</h4>
+                            <div class="dept-info">
+                                <span class="dept-stat">19 Active Cases</span>
+                                <span class="dept-rating">4.7⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Issue Section -->
+        <section id="register" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Report an Issue</h2>
+                    <p>Submit your complaint and get automatic SMS/WhatsApp updates</p>
+                </div>
+
+                <!-- Notification Preferences -->
+                <div class="notification-panel">
+                    <h3>📞 Communication Preferences</h3>
+                    <div class="notification-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="enableSMS" checked="">
+                            <span class="checkbox-custom"></span>
+                            <div class="option-info">
+                                <span class="option-title">📱 SMS Updates</span>
+                                <span class="option-desc">Instant text notifications</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="enableWhatsApp" checked="">
+                            <span class="checkbox-custom"></span>
+                            <div class="option-info">
+                                <span class="option-title">💬 WhatsApp Updates</span>
+                                <span class="option-desc">Rich media notifications</span>
+                            </div>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="enableEmail">
+                            <span class="checkbox-custom"></span>
+                            <div class="option-info">
+                                <span class="option-title">📧 Email Reports</span>
+                                <span class="option-desc">Detailed summaries</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Complaint Form -->
+                <div class="form-container">
+                    <form id="complaintForm" class="complaint-form">
+                        <!-- Category Selection -->
+                        <div class="form-section">
+                            <h3>Select Category</h3>
+                            <div class="category-grid">
+                                <div class="category-option" data-category="Roads &amp; Infrastructure">
+                                    <div class="category-icon">🛣️</div>
+                                    <div class="category-text">
+                                        <h4>Roads &amp; Infrastructure</h4>
+                                        <p>Potholes, road repairs, traffic issues</p>
+                                    </div>
+                                </div>
+                                <div class="category-option" data-category="Water &amp; Sanitation">
+                                    <div class="category-icon">💧</div>
+                                    <div class="category-text">
+                                        <h4>Water &amp; Sanitation</h4>
+                                        <p>Water supply, sewage, drainage</p>
+                                    </div>
+                                </div>
+                                <div class="category-option" data-category="Electrical">
+                                    <div class="category-icon">⚡</div>
+                                    <div class="category-text">
+                                        <h4>Street Lighting</h4>
+                                        <p>Street lights, electrical safety</p>
+                                    </div>
+                                </div>
+                                <div class="category-option" data-category="Waste Management">
+                                    <div class="category-icon">🗑️</div>
+                                    <div class="category-text">
+                                        <h4>Waste Management</h4>
+                                        <p>Garbage collection, cleanliness</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Issue Details -->
+                        <div class="form-section">
+                            <h3>Issue Details</h3>
+                            <div class="form-grid">
+                                <div class="form-group full-width">
+                                    <label for="issueTitle">Issue Title *</label>
+                                    <input type="text" id="issueTitle" name="title" required="" placeholder="Brief description of the issue">
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="location">Location *</label>
+                                    <div class="location-input">
+                                        <input type="text" id="location" name="location" required="" placeholder="Enter complete address">
+                                        <button type="button" id="useCurrentLocation" class="location-btn">
+                                            📍 Use Current Location
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group full-width">
+                                    <label for="description">Detailed Description *</label>
+                                    <textarea id="description" name="description" rows="4" required="" placeholder="Provide detailed information about the issue"></textarea>
+                                    <div class="char-counter">0/500 characters</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Information -->
+                        <div class="form-section">
+                            <h3>Contact Information</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="citizenName">Your Name *</label>
+                                    <input type="text" id="citizenName" name="name" required="">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Mobile Number *</label>
+                                    <input type="tel" id="phone" name="phone" required="" placeholder="10-digit mobile number">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="whatsapp">WhatsApp Number</label>
+                                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="Same as mobile (optional)">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email (Optional)</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Photo Upload -->
+                        <div class="form-section">
+                            <h3>Upload Photos (Optional)</h3>
+                            <div class="upload-area" id="uploadArea">
+                                <div class="upload-content">
+                                    <div class="upload-icon">📷</div>
+                                    <p>Click to upload photos or drag and drop</p>
+                                    <p class="upload-hint">Maximum 5 photos, 5MB each</p>
+                                </div>
+                                <input type="file" id="photoInput" multiple="" accept="image/*" style="display: none;">
+                            </div>
+                            <div id="photoPreview" class="photo-preview"></div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                🚀 Submit Complaint
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Track Status Section -->
+        <section id="track" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Track Your Complaint</h2>
+                    <p>Enter your complaint ID or phone number to view status</p>
+                </div>
+
+                <div class="track-form">
+                    <div class="search-container">
+                        <input type="text" id="trackId" placeholder="Enter Complaint ID or Phone Number" class="search-input">
+                        <button id="trackBtn" class="btn btn-primary">🔍 Search</button>
+                    </div>
+                    
+                    <div class="quick-search">
+                        <p>Quick search examples:</p>
+                        <button class="quick-btn" onclick="setTrackId(&#39;CMP2025001&#39;)">CMP2025001</button>
+                        <button class="quick-btn" onclick="setTrackId(&#39;CMP2025002&#39;)">CMP2025002</button>
+                        <button class="quick-btn" onclick="setTrackId(&#39;+91-9876543210&#39;)">+91-9876543210</button>
+                    </div>
+                </div>
+
+                <div id="trackResult" class="track-result hidden">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Officer Dashboard Section -->
+        <section id="dashboard" class="section">
+            <div class="container">
+                <!-- Login Screen -->
+                <div id="loginScreen" class="login-container">
+                    <div class="login-card">
+                        <div class="login-header">
+                            <div class="login-icon">👮‍♂️</div>
+                            <h2>Officer Portal</h2>
+                            <p>Municipal Complaint Management Dashboard</p>
+                        </div>
+                        
+                        <form id="loginForm" class="login-form">
+                            <div class="form-group">
+                                <label for="loginEmail">Officer Email</label>
+                                <input type="email" id="loginEmail" value="rajesh.sharma@municipal.gov.in" required="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" value="officer123" required="">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                🚀 Access Dashboard
+                            </button>
+                        </form>
+                        
+                        <div class="demo-credentials">
+                            <p><strong>Demo Credentials:</strong></p>
+                            <p>Email: rajesh.sharma@municipal.gov.in</p>
+                            <p>Password: officer123</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Content -->
+                <div id="dashboardContent" class="dashboard-content hidden">
+                    <!-- Officer Profile -->
+                    <div class="officer-profile">
+                        <div class="profile-info">
+                            <div class="profile-avatar">👨‍🔧</div>
+                            <div class="profile-details">
+                                <h2 class="officer-name">Engineer Rajesh Sharma</h2>
+                                <p class="officer-department">Roads &amp; Infrastructure • Senior Engineer</p>
+                                <div class="officer-badges">
+                                    <span class="badge">Speed Expert</span>
+                                    <span class="badge">Quality Champion</span>
+                                    <span class="badge">Citizen Favorite</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">14</div>
+                                <div class="stat-label">Pending</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">142</div>
+                                <div class="stat-label">Completed</div>
+                            </div>
+                            <div class="stat-box success">
+                                <div class="stat-value">4.7</div>
+                                <div class="stat-label">Rating</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">91%</div>
+                                <div class="stat-label">On-Time</div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-actions">
+                            <button class="btn btn-secondary" id="fieldModeBtn">📱 Field Mode</button>
+                            <button class="btn btn-secondary" id="logoutBtn">🚪 Logout</button>
+                        </div>
+                    </div>
+
+                    <!-- Communication Center -->
+                    <div class="communication-center">
+                        <h3>📱 Communication Center</h3>
+                        <div class="comm-grid">
+                            <div class="comm-card">
+                                <div class="comm-header">
+                                    <span class="comm-icon">📤</span>
+                                    <h4>Today's Outreach</h4>
+                                </div>
+                                <div class="comm-stats">
+                                    <div class="main-stat">47</div>
+                                    <div class="stat-breakdown">
+                                        <span>📱 SMS: 28</span>
+                                        <span>💬 WhatsApp: 19</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm" id="bulkSMS">Send Bulk SMS</button>
+                            </div>
+                            
+                            <div class="comm-card">
+                                <div class="comm-header">
+                                    <span class="comm-icon">📊</span>
+                                    <h4>Delivery Stats</h4>
+                                </div>
+                                <div class="comm-stats">
+                                    <div class="main-stat success">98.2%</div>
+                                    <div class="stat-breakdown">
+                                        <span>✅ Delivered: 46</span>
+                                        <span>👁️ Read: 44</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-sm" id="whatsappBroadcast">WhatsApp Broadcast</button>
+                            </div>
+                            
+                            <div class="comm-card">
+                                <div class="comm-header">
+                                    <span class="comm-icon">🎯</span>
+                                    <h4>Quick Actions</h4>
+                                </div>
+                                <div class="quick-actions">
+                                    <button class="btn btn-sm" id="emergencyAlert">🚨 Emergency Alert</button>
+                                    <button class="btn btn-sm" id="templateManager">📄 Templates</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Complaint Management -->
+                    <div class="complaint-management">
+                        <div class="management-header">
+                            <h3>🗂️ Complaint Management</h3>
+                            <div class="management-filters">
+                                <select id="categoryFilter" class="filter-select">
+                                    <option value="">All Categories</option>
+                                    <option value="Roads &amp; Infrastructure">Roads &amp; Infrastructure</option>
+                                    <option value="Water &amp; Sanitation">Water &amp; Sanitation</option>
+                                    <option value="Electrical">Electrical</option>
+                                </select>
+                                <select id="priorityFilter" class="filter-select">
+                                    <option value="">All Priorities</option>
+                                    <option value="Emergency">Emergency</option>
+                                    <option value="High">High</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Low">Low</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="kanban-board">
+                            <div class="kanban-column received">
+                                <div class="column-header">
+                                    <h4>📥 Received</h4>
+                                    <span class="count-badge" id="receivedCount">3</span>
+                                </div>
+                                <div class="column-content" id="receivedCards"></div>
+                            </div>
+                            
+                            <div class="kanban-column assigned">
+                                <div class="column-header">
+                                    <h4>👥 Assigned</h4>
+                                    <span class="count-badge" id="assignedCount">2</span>
+                                </div>
+                                <div class="column-content" id="assignedCards"></div>
+                            </div>
+                            
+                            <div class="kanban-column progress">
+                                <div class="column-header">
+                                    <h4>🔄 In Progress</h4>
+                                    <span class="count-badge" id="progressCount">4</span>
+                                </div>
+                                <div class="column-content" id="progressCards"></div>
+                            </div>
+                            
+                            <div class="kanban-column resolved">
+                                <div class="column-header">
+                                    <h4>✅ Resolved</h4>
+                                    <span class="count-badge" id="resolvedCount">8</span>
+                                </div>
+                                <div class="column-content" id="resolvedCards"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field Interface (Hidden by default) -->
+                    <div id="fieldInterface" class="field-interface hidden">
+                        <div class="field-header">
+                            <h3>📱 Mobile Field Interface</h3>
+                            <button class="btn btn-secondary" id="exitFieldMode">Exit Field Mode</button>
+                        </div>
+                        <div class="field-tools">
+                            <button class="tool-btn" id="gpsLocation">
+                                <span class="tool-icon">📍</span>
+                                <span>GPS Location</span>
+                            </button>
+                            <button class="tool-btn" id="cameraCapture">
+                                <span class="tool-icon">📷</span>
+                                <span>Capture Photo</span>
+                            </button>
+                            <button class="tool-btn" id="voiceNote">
+                                <span class="tool-icon">🎤</span>
+                                <span>Voice Note</span>
+                            </button>
+                            <button class="tool-btn" id="quickUpdate">
+                                <span class="tool-icon">⚡</span>
+                                <span>Quick Update</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Performance Analytics -->
+                    <div class="performance-analytics">
+                        <h3>📈 Performance Analytics</h3>
+                        <div class="analytics-grid">
+                            <div class="analytics-card">
+                                <h4>This Month</h4>
+                                <div class="analytics-stats">
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Assigned:</span>
+                                        <span class="analytics-value">23</span>
+                                    </div>
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Completed:</span>
+                                        <span class="analytics-value">21</span>
+                                    </div>
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Avg Time:</span>
+                                        <span class="analytics-value">2.1 days</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="analytics-card">
+                                <h4>Communication Stats</h4>
+                                <div class="analytics-stats">
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">SMS Sent:</span>
+                                        <span class="analytics-value">156</span>
+                                    </div>
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">WhatsApp:</span>
+                                        <span class="analytics-value">134</span>
+                                    </div>
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Response Rate:</span>
+                                        <span class="analytics-value">89%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="analytics-card">
+                                <h4>Citizen Feedback</h4>
+                                <div class="analytics-stats">
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Overall Rating:</span>
+                                        <span class="analytics-value">4.7⭐</span>
+                                    </div>
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Satisfaction:</span>
+                                        <span class="analytics-value">94%</span>
+                                    </div>
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Recommendations:</span>
+                                        <span class="analytics-value">91%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal-overlay hidden">
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="success-icon">✅</div>
+                    <h3>Complaint Submitted Successfully!</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="success-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Complaint ID:</span>
+                            <span class="detail-value" id="generatedId">CMP2025004</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value" id="assignedPriority">High</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Expected Response:</span>
+                            <span class="detail-value" id="expectedResponse">24 hours</span>
+                        </div>
+                    </div>
+                    <div class="notification-summary">
+                        <h4>📱 Notifications Activated:</h4>
+                        <div class="notification-list">
+                            <div class="notification-item">
+                                <span class="notification-icon">📱</span>
+                                <span>SMS confirmation sent</span>
+                            </div>
+                            <div class="notification-item">
+                                <span class="notification-icon">💬</span>
+                                <span>WhatsApp tracking enabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-primary" onclick="closeModal(); navigationManager.navigateToSection(&#39;track&#39;)">
+                        📊 Track Progress
+                    </button>
+                    <button class="btn btn-secondary" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Complaint Details Modal -->
+    <div id="complaintModal" class="modal-overlay hidden">
+        <div class="modal-container large">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>📋 Complaint Details</h3>
+                    <button class="modal-close" onclick="closeModal()">×</button>
+                </div>
+                <div class="modal-body" id="complaintDetails">
+                    <!-- Details will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation (shown on smaller screens) -->
+    <nav class="mobile-nav">
+        <button class="mobile-nav-btn active" data-section="home">
+            <span class="mobile-nav-icon">🏠</span>
+            <span>Home</span>
+        </button>
+        <button class="mobile-nav-btn" data-section="register">
+            <span class="mobile-nav-icon">📝</span>
+            <span>Report</span>
+        </button>
+        <button class="mobile-nav-btn" data-section="track">
+            <span class="mobile-nav-icon">📊</span>
+            <span>Track</span>
+        </button>
+        <button class="mobile-nav-btn" data-section="dashboard">
+            <span class="mobile-nav-icon">👮‍♂️</span>
+            <span>Officer</span>
+        </button>
+    </nav>
+
+    <script src="./CivicConnect - Municipal Complaint Management Platform_files/app.js.download"></script>
+
+</body></html>
