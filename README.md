@@ -48,7 +48,10 @@ Bulk messaging system
 
 
 🛠️ Tech Stack
+
 Technology	Usage
 HTML5	Structure
+
 CSS3	Styling & responsive UI
+
 JavaScript (Vanilla)	Logic & interactivity
