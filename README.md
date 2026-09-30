@@ -22,10 +22,12 @@ Upload images for issue proof
 Location capture support
 SMS / WhatsApp / Email notification preferences
 Complaint tracking system
+
 📊 Tracking System
 Search by Complaint ID or phone number
 Real-time status updates
 Quick search shortcuts
+
 👮 Officer Dashboard
 Secure login system (demo mode included)
 Kanban-style complaint management board:
@@ -36,11 +38,15 @@ Resolved
 Performance analytics
 Communication center (SMS/WhatsApp tracking)
 Field mode for on-site updates
+
+
 📱 Smart Communication
 SMS alerts
 WhatsApp notifications
 Email reports (optional)
 Bulk messaging system
+
+
 🛠️ Tech Stack
 Technology	Usage
 HTML5	Structure
