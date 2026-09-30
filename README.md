@@ -4,7 +4,7 @@ this project is for civilians to take pictures and upload to resolve civic issue
 A professional, responsive web application for citizens to report municipal issues and track complaints with real-time status updates.
 
 🚀 Live Demo
-👉 View Live Project : 
+👉 View Live Project :  https://civic-connect-rage.vercel.app
 
 📋 Overview
 CivicConnect is a smart municipal complaint management system that allows citizens to:
